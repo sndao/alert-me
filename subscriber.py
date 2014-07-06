@@ -12,6 +12,7 @@ STEVEN_PHONE = '7135384209@messaging.sprintpcs.com'
 
 class subscriber:
     def __init__(self, module):
+        self.STEVEN_PHONE = STEVEN_PHONE
         if module == 'SL':
             self.list = [STEVEN_EMAIL]
         if module == 'NC':
