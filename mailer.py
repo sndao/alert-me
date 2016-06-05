@@ -7,15 +7,6 @@ SMTP_SERVER = WF_SMTP
 
 class mailer:
     def __init__(self):
-        if SMTP_SERVER == WF_SMTP:
-            self.from_address = 'tickets@stevendao.com'
-            self.login = 'notifs'
-            self.password = 'notifications'
-
-        if SMTP_SERVER == GMAIL_SMTP:
-            self.from_address = 'stevendaomailer@gmail.com'
-            self.login = 'stevendaomailer@gmail.com'
-            self.password = 'sdmailer#1'
 
     def sendemail(self, from_addr, to_addr_list, cc_addr_list,
                   subject, message,
